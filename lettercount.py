@@ -23,9 +23,13 @@ def main():
 			file_ascii_values.append(ord(my_list[index]))
 		index += 1
 
-	print file_ascii_values
-	# print ord(my_list[676417])	
+	returned_counts = list()
 
+	for new_index in ascii_nums:
+		returned_counts.append(file_ascii_values.count(new_index))
+
+	print returned_counts
+	# print ord(my_list[676417])	
 
 if __name__ == '__main__':
 	main()
